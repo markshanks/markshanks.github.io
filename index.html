@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>传送门游戏下载 - 官方视频门户,正版高清攻略与创作者社区</title>
+<meta name="description" content="传送门游戏下载官方网站视频门户，提供正版高清游戏影像、通关攻略、创作者内容与社区互动，深耕解谜游戏垂直领域的内容生态平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2330'/%3E%3Cellipse cx='32' cy='30' rx='9' ry='15' fill='%23ff8a3d'/%3E%3Cellipse cx='32' cy='30' rx='4' ry='9' fill='%231b2330'/%3E%3Crect x='14' y='46' width='36' height='5' rx='2.5' fill='%2338d4ff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --pt-ink:#1b2330;
+  --pt-ink-2:#2a3444;
+  --pt-paper:#f4f6f9;
+  --pt-card:#ffffff;
+  --pt-line:#dde3ec;
+  --pt-mut:#5c6a7e;
+  --pt-accent:#ff7a1a;
+  --pt-accent-2:#38d4ff;
+  --pt-glow:#ffe9d8;
+  --pt-radius:14px;
+  --pt-shadow:0 10px 30px rgba(27,35,48,.09);
+  --pt-head:118px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--pt-ink);
+  background:var(--pt-paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4,p{margin:0}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+section{scroll-margin-top:var(--pt-head)}
+.pt-wrap{width:min(1180px,92vw);margin:0 auto}
+.pt-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- 吸顶：公告条 + 页头 ---------- */
+.pt-sticky{position:sticky;top:0;z-index:60;box-shadow:0 2px 18px rgba(27,35,48,.10)}
+.pt-bulletin{
+  background:linear-gradient(90deg,#1b2330 0%,#24324a 60%,#1b2330 100%);
+  color:#e9eef6;font-size:13.5px;
+}
+.pt-bulletin .pt-wrap{display:flex;align-items:center;gap:12px;min-height:40px;padding:6px 0;flex-wrap:wrap}
+.pt-bulletin-tag{
+  flex:0 0 auto;background:var(--pt-accent);color:#1b2330;font-weight:700;
+  font-size:11.5px;letter-spacing:.1em;padding:2px 8px;border-radius:4px;
+}
+.pt-bulletin-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1 1 auto;min-width:200px}
+.pt-bulletin-text b{color:#ffb27a;font-weight:600}
+.pt-bulletin-link{flex:0 0 auto;color:#38d4ff;font-size:12.5px;border-bottom:1px dashed rgba(56,212,255,.6)}
+.pt-header{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--pt-line)}
+.pt-header .pt-wrap{display:flex;align-items:center;gap:22px;min-height:76px;flex-wrap:wrap}
+.pt-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.pt-brand-mark{
+  width:38px;height:38px;border-radius:11px;background:var(--pt-ink);
+  display:grid;place-items:center;box-shadow:inset 0 0 0 2px rgba(56,212,255,.35);
+}
+.pt-brand-name{font-size:17px;font-weight:800;letter-spacing:.03em;line-height:1.2}
+.pt-brand-sub{font-size:10.5px;letter-spacing:.22em;color:var(--pt-mut);text-transform:uppercase}
+.pt-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+.pt-nav a{
+  font-size:14px;color:var(--pt-ink-2);padding:7px 11px;border-radius:8px;
+  transition:background .18s,color .18s;
+}
+.pt-nav a:hover{background:var(--pt-glow);color:#c2540a}
+.pt-search{position:relative;flex:0 1 240px;min-width:170px}
+.pt-search input{
+  width:100%;padding:9px 34px 9px 12px;border-radius:9px;border:1px solid var(--pt-line);
+  background:#f7f9fc;font-size:13.5px;color:var(--pt-ink);outline:none;transition:border-color .18s,box-shadow .18s;
+}
+.pt-search input:focus{border-color:var(--pt-accent-2);box-shadow:0 0 0 3px rgba(56,212,255,.18)}
+.pt-search-btn{position:absolute;right:4px;top:50%;transform:translateY(-50%);padding:4px 7px;border-radius:6px}
+.pt-search-btn:hover{background:var(--pt-glow)}
+.pt-search-hint{
+  position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--pt-line);
+  border-radius:10px;box-shadow:var(--pt-shadow);padding:8px;font-size:13px;display:none;z-index:70;
+}
+.pt-search-hint.pt-on{display:block}
+.pt-search-hint p{color:var(--pt-mut);font-size:12.5px;padding:4px 6px}
+.pt-search-hint button{
+  display:block;width:100%;text-align:left;padding:6px 8px;border-radius:7px;font-size:13px;color:var(--pt-ink-2);
+}
+.pt-search-hint button:hover{background:var(--pt-glow);color:#c2540a}
+.pt-burger{display:none;width:42px;height:40px;border-radius:9px;border:1px solid var(--pt-line);background:#fff;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.pt-burger span{display:block;width:20px;height:2px;background:var(--pt-ink);border-radius:2px;transition:.2s}
+.pt-burger.pt-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.pt-burger.pt-open span:nth-child(2){opacity:0}
+.pt-burger.pt-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---------- 通用区块 ---------- */
+.pt-sec{padding:64px 0}
+.pt-sec:nth-of-type(even){background:#eef2f7}
+.pt-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:30px;flex-wrap:wrap}
+.pt-eyebrow{font-size:11.5px;letter-spacing:.24em;color:var(--pt-accent);font-weight:700;text-transform:uppercase}
+.pt-h2{font-size:clamp(22px,2.7vw,30px);line-height:1.3;font-weight:800;letter-spacing:.01em}
+.pt-h2 em{font-style:normal;color:var(--pt-accent);}
+.pt-sec-lead{color:var(--pt-mut);font-size:14.5px;max-width:620px;margin-top:8px}
+.pt-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.pt-btn:hover{transform:translateY(-2px)}
+.pt-btn-solid{background:var(--pt-accent);color:#20160c;box-shadow:0 6px 18px rgba(255,122,26,.35)}
+.pt-btn-solid:hover{background:#ff8f3a}
+.pt-btn-ghost{background:#fff;color:var(--pt-ink);border:1px solid var(--pt-line);box-shadow:0 4px 14px rgba(27,35,48,.06)}
+.pt-btn-ghost:hover{border-color:var(--pt-accent-2);color:#0e6b83}
+
+/* ---------- 首屏 ---------- */
+.pt-hero{background:radial-gradient(1200px 500px at 78% -10%,rgba(56,212,255,.22),transparent 62%),linear-gradient(180deg,#1b2330 0%,#202b3d 100%);color:#eef3fa;padding:56px 0 64px}
+.pt-hero-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:44px;align-items:center}
+.pt-hero h1{font-size:clamp(30px,4.6vw,50px);line-height:1.16;font-weight:900;letter-spacing:.01em}
+.pt-hero h1 span{color:var(--pt-accent-2)}
+.pt-hero-tagline{margin-top:16px;font-size:clamp(15px,1.6vw,18px);color:#c7d3e4;max-width:560px}
+.pt-hero-intro{margin-top:18px;font-size:14.5px;line-height:1.95;color:#aebccf;max-width:580px}
+.pt-hero-intro b{color:#e8eef7;font-weight:600}
+.pt-hero-actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.pt-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px;max-width:560px}
+.pt-stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 15px}
+.pt-stat-num{font-size:clamp(20px,2.4vw,26px);font-weight:800;color:var(--pt-accent-2);letter-spacing:.02em}
+.pt-stat-label{font-size:12px;color:#9fb0c6;margin-top:2px}
+.pt-hero-visual{position:relative}
+.pt-hero-visual img{border-radius:18px;box-shadow:0 30px 70px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.12);width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.pt-hero-badge{
+  position:absolute;left:-12px;bottom:20px;background:#fff;color:var(--pt-ink);border-radius:12px;padding:10px 14px;
+  box-shadow:0 14px 34px rgba(0,0,0,.35);display:flex;align-items:center;gap:10px;
+}
+.pt-hero-badge b{font-size:13px;display:block;line-height:1.3}
+.pt-hero-badge small{font-size:11.5px;color:var(--pt-mut)}
+.pt-hero-play{width:34px;height:34px;border-radius:50%;background:var(--pt-accent);display:grid;place-items:center;flex:0 0 auto}
+
+/* ---------- 焦点 + 视频流 ---------- */
+.pt-focus-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:30px;align-items:start}
+.pt-focus-card{background:var(--pt-card);border-radius:var(--pt-radius);overflow:hidden;box-shadow:var(--pt-shadow);border:1px solid var(--pt-line)}
+.pt-focus-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.pt-focus-body{padding:20px 22px 22px}
+.pt-chip{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:999px;background:var(--pt-glow);color:#b3510b;margin-bottom:10px}
+.pt-focus-body h3{font-size:20px;line-height:1.4;margin-bottom:8px}
+.pt-focus-body p{font-size:13.8px;color:var(--pt-mut)}
+.pt-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--pt-mut);margin-top:12px}
+.pt-vlist{display:flex;flex-direction:column;gap:14px}
+.pt-vitem{
+  background:#fff;border:1px solid var(--pt-line);border-radius:12px;padding:15px 17px;
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:start;
+  transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.pt-vitem:hover{transform:translateY(-2px);box-shadow:var(--pt-shadow);border-color:#c7d2e2}
+.pt-vitem h4{font-size:15.5px;line-height:1.45;margin-bottom:4px}
+.pt-vitem .pt-desc{font-size:13px;color:var(--pt-mut);grid-column:1/2}
+.pt-vitem .pt-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;grid-column:1/2}
+.pt-tag{font-size:11.5px;padding:2px 8px;border-radius:999px;background:#f0f4fa;color:#44536b;border:1px solid #e2e8f2}
+.pt-vitem .pt-meta{grid-column:1/2;margin-top:2px}
+.pt-vops{display:flex;gap:6px;align-items:center;grid-column:2/3;grid-row:1/3;align-self:center;flex-wrap:wrap;justify-content:flex-end}
+.pt-op{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:5px 9px;border-radius:8px;
+  border:1px solid var(--pt-line);background:#fbfcfe;color:var(--pt-mut);transition:.18s;
+}
+.pt-op:hover{border-color:var(--pt-accent-2);color:#0e6b83;background:#f2fbff}
+.pt-op.pt-liked{background:#fff1e6;border-color:#ffb98a;color:#c2540a;font-weight:700}
+.pt-op.pt-faved{background:#eaf9ff;border-color:#9fdcf0;color:#0e6b83;font-weight:700}
+
+/* ---------- 专题 ---------- */
+.pt-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.pt-topic{background:#fff;border:1px solid var(--pt-line);border-radius:var(--pt-radius);padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 6px 20px rgba(27,35,48,.05)}
+.pt-topic:first-child{grid-row:span 1}
+.pt-topic img{border-radius:10px;aspect-ratio:16/9;object-fit:cover}
+.pt-topic h3{font-size:17px;line-height:1.4}
+.pt-topic p{font-size:13.2px;color:var(--pt-mut)}
+.pt-topic ul{display:flex;flex-direction:column;gap:6px;font-size:13px}
+.pt-topic ul li{padding-left:14px;position:relative;color:#3c4a5e}
+.pt-topic ul li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--pt-accent)}
+.pt-status{align-self:flex-start;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:#e8f7ef;color:#12734a}
+
+/* ---------- 解析长文 ---------- */
+.pt-article{background:#fff;border:1px solid var(--pt-line);border-radius:18px;padding:clamp(22px,3.4vw,42px);box-shadow:0 8px 26px rgba(27,35,48,.05)}
+.pt-article h2{font-size:clamp(21px,2.4vw,27px);line-height:1.35;margin-bottom:14px}
+.pt-article h3{font-size:17px;margin:26px 0 8px;line-height:1.5;color:var(--pt-ink)}
+.pt-article h3::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--pt-accent);margin-right:9px;vertical-align:2px;transform:rotate(45deg)}
+.pt-article p{font-size:14.6px;color:#3a4758;line-height:2.02;margin-top:6px}
+.pt-article p b{color:var(--pt-ink);font-weight:700}
+.pt-article-note{margin-top:24px;padding:16px 18px;border-left:4px solid var(--pt-accent-2);background:#f3fbfe;border-radius:0 10px 10px 0;font-size:13.8px;color:#31566b}
+
+/* ---------- 作者区 ---------- */
+.pt-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.pt-author{background:#fff;border:1px solid var(--pt-line);border-radius:var(--pt-radius);padding:20px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;box-shadow:0 6px 20px rgba(27,35,48,.05);transition:transform .18s,box-shadow .18s}
+.pt-author:hover{transform:translateY(-3px);box-shadow:var(--pt-shadow)}
+.pt-ava{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:20px;color:#fff;letter-spacing:.02em}
+.pt-author h3{font-size:16.5px;margin-bottom:2px}
+.pt-author .pt-role{font-size:12px;color:var(--pt-accent);font-weight:700;letter-spacing:.04em}
+.pt-author p{font-size:13px;color:var(--pt-mut);margin-top:8px}
+.pt-author-nums{display:flex;gap:14px;margin-top:10px;font-size:12px;color:#45536a;flex-wrap:wrap}
+.pt-author-nums b{color:var(--pt-ink)}
+.pt-author-more{margin-top:10px;font-size:12.5px;color:#0e6b83;border-bottom:1px dashed #9fdcf0;align-self:flex-start}
+
+/* ---------- 评论 ---------- */
+.pt-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pt-comment{background:#fff;border:1px solid var(--pt-line);border-radius:12px;padding:16px 18px;box-shadow:0 4px 14px rgba(27,35,48,.04)}
+.pt-comment-top{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.pt-cava{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;flex:0 0 auto}
+.pt-cname{font-size:13.5px;font-weight:700}
+.pt-cstar{font-size:11.5px;color:var(--pt-accent);margin-left:auto;letter-spacing:1px}
+.pt-comment p{font-size:13.4px;color:#3a4758;line-height:1.85}
+.pt-comment .pt-cmeta{font-size:11.5px;color:#8794a8;margin-top:8px}
+.pt-ratesum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px;background:#fff;border:1px solid var(--pt-line);border-radius:12px;padding:18px}
+.pt-ratesum div{text-align:center}
+.pt-ratesum b{display:block;font-size:24px;font-weight:800;color:var(--pt-ink)}
+.pt-ratesum span{font-size:12px;color:var(--pt-mut)}
+
+/* ---------- FAQ ---------- */
+.pt-faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.pt-faq details{background:#fff;border:1px solid var(--pt-line);border-radius:12px;padding:14px 18px;transition:border-color .18s,box-shadow .18s}
+.pt-faq details[open]{border-color:#b9e6f4;box-shadow:0 8px 22px rgba(56,212,255,.12)}
+.pt-faq summary{font-size:14.5px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.pt-faq summary::-webkit-details-marker{display:none}
+.pt-faq summary::after{content:"+";font-size:19px;color:var(--pt-accent);font-weight:700;flex:0 0 auto}
+.pt-faq details[open] summary::after{content:"–"}
+.pt-faq p{font-size:13.4px;color:var(--pt-mut);margin-top:9px;line-height:1.9}
+
+/* ---------- 动态 / 合作 ---------- */
+.pt-split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:30px;align-items:start}
+.pt-news{display:flex;flex-direction:column;gap:0}
+.pt-news li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:15px 0;border-bottom:1px dashed var(--pt-line)}
+.pt-news li:last-child{border-bottom:none}
+.pt-news time{font-size:12px;color:var(--pt-accent);font-weight:700;letter-spacing:.04em;white-space:nowrap;padding-top:2px}
+.pt-news h3{font-size:14.8px;line-height:1.5;margin-bottom:3px}
+.pt-news p{font-size:13px;color:var(--pt-mut)}
+.pt-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pt-partner{background:#fff;border:1px solid var(--pt-line);border-radius:11px;padding:16px;display:flex;align-items:center;gap:11px;font-size:13.5px;font-weight:600;color:var(--pt-ink-2)}
+.pt-partner i{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-style:normal;font-size:14px;font-weight:800;color:#fff;flex:0 0 auto}
+
+/* ---------- CTA / 投稿 ---------- */
+.pt-cta{background:linear-gradient(120deg,#1b2330,#26374f 62%,#1b2330);color:#eef3fa;border-radius:20px;padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:minmax(0,1.4fr) auto;gap:24px;align-items:center}
+.pt-cta h2{font-size:clamp(20px,2.4vw,26px);line-height:1.4}
+.pt-cta p{font-size:14px;color:#aebccf;margin-top:8px;max-width:640px}
+
+/* ---------- 页脚 ---------- */
+.pt-footer{background:#131a24;color:#9fb0c6;padding:52px 0 26px;font-size:13.4px}
+.pt-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:30px}
+.pt-footer h3{color:#eef3fa;font-size:14px;margin-bottom:12px;letter-spacing:.04em}
+.pt-footer li{margin-bottom:7px}
+.pt-footer a:hover{color:var(--pt-accent-2)}
+.pt-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.pt-footer-brand b{color:#eef3fa;font-size:16px;letter-spacing:.03em}
+.pt-footer p{line-height:1.9}
+.pt-footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.4px;color:#7d8ea4}
+
+/* ---------- Toast / 弹窗 / 回顶 ---------- */
+.pt-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:#1b2330;color:#fff;
+  padding:11px 20px;border-radius:10px;font-size:13.5px;box-shadow:0 16px 40px rgba(0,0,0,.32);
+  opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;z-index:200;max-width:86vw;text-align:center;
+}
+.pt-toast.pt-on{opacity:1;transform:translate(-50%,0)}
+.pt-modal{position:fixed;inset:0;background:rgba(15,22,32,.62);display:none;place-items:center;padding:20px;z-index:210}
+.pt-modal.pt-on{display:grid}
+.pt-modal-card{background:#fff;border-radius:16px;width:min(520px,100%);padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.4);max-height:86vh;overflow:auto}
+.pt-modal-card h3{font-size:19px;margin-bottom:8px}
+.pt-modal-card p{font-size:13.6px;color:var(--pt-mut);line-height:1.9}
+.pt-modal-close{float:right;font-size:20px;line-height:1;color:var(--pt-mut);padding:2px 6px;border-radius:6px}
+.pt-modal-close:hover{background:#f0f4fa;color:var(--pt-ink)}
+.pt-field{margin-top:14px}
+.pt-field label{display:block;font-size:12.5px;font-weight:700;color:var(--pt-ink-2);margin-bottom:5px}
+.pt-field input,.pt-field textarea{width:100%;padding:10px 12px;border:1px solid var(--pt-line);border-radius:9px;font-size:13.5px;font-family:inherit;outline:none;background:#f9fbfd}
+.pt-field input:focus,.pt-field textarea:focus{border-color:var(--pt-accent-2);box-shadow:0 0 0 3px rgba(56,212,255,.16)}
+.pt-top{
+  position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:12px;background:var(--pt-ink);color:#fff;
+  display:grid;place-items:center;box-shadow:0 10px 26px rgba(27,35,48,.35);opacity:0;pointer-events:none;transition:.22s;z-index:150;
+}
+.pt-top.pt-on{opacity:1;pointer-events:auto}
+.pt-top:hover{background:var(--pt-accent);color:#1b2330}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:960px){
+  :root{--pt-head:112px}
+  .pt-hero-grid{grid-template-columns:1fr;gap:30px}
+  .pt-focus-grid{grid-template-columns:1fr}
+  .pt-topic-grid{grid-template-columns:1fr 1fr}
+  .pt-split{grid-template-columns:1fr}
+  .pt-footer-grid{grid-template-columns:1fr 1fr}
+  .pt-cta{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  :root{--pt-head:104px}
+  .pt-burger{display:flex}
+  .pt-nav{
+    display:none;flex-basis:100%;order:5;flex-direction:column;background:#fff;
+    border-top:1px solid var(--pt-line);margin-top:4px;padding:8px 0 12px;
+  }
+  .pt-nav.pt-open{display:flex}
+  .pt-nav a{padding:10px 6px;font-size:15px}
+  .pt-search{flex:1 1 auto;order:4}
+  .pt-authors,.pt-comments,.pt-faq,.pt-ratesum{grid-template-columns:1fr}
+  .pt-topic-grid{grid-template-columns:1fr}
+  .pt-footer-grid{grid-template-columns:1fr}
+  .pt-sec{padding:46px 0}
+  .pt-hero-stats{grid-template-columns:1fr 1fr}
+  .pt-vitem{grid-template-columns:1fr}
+  .pt-vops{grid-column:1/2;grid-row:auto;justify-content:flex-start;margin-top:6px}
+  .pt-bulletin .pt-wrap{gap:8px;padding:8px 0}
+  .pt-bulletin-link{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="pt-sticky">
+  <div class="pt-bulletin" aria-label="最新公告">
+    <div class="pt-wrap">
+      <span class="pt-bulletin-tag">官方发布</span>
+      <span class="pt-bulletin-text">更新：<b>《传送门游戏下载》年度解谜影像企划</b> 第 3 期上线，新增 12 条通关实录与 4 位创作者访谈，同步开放冬季投稿通道。</span>
+      <a class="pt-bulletin-link" href="#pt-topic">查看本期企划 →</a>
+    </div>
+  </div>
+  <header class="pt-header">
+    <div class="pt-wrap">
+      <a class="pt-brand" href="#pt-home" aria-label="传送门游戏下载官网首页">
+        <span class="pt-brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="10" rx="4.2" ry="6.6" fill="#ff7a1a"/><ellipse cx="12" cy="10" rx="1.8" ry="3.6" fill="#1b2330"/><rect x="5" y="18" width="14" height="2.4" rx="1.2" fill="#38d4ff"/></svg>
+        </span>
+        <span>
+          <span class="pt-brand-name">传送门游戏下载</span>
+          <span class="pt-brand-sub">Official Video Portal</span>
+        </span>
+      </a>
+
+      <nav class="pt-nav" id="ptNav" aria-label="主导航">
+        <a href="#pt-home">首页</a>
+        <a href="#pt-focus">焦点内容</a>
+        <a href="#pt-topic">专题企划</a>
+        <a href="#pt-guide">内容解析</a>
+        <a href="#pt-authors">创作者</a>
+        <a href="#pt-voices">用户口碑</a>
+        <a href="#pt-faq">帮助</a>
+      </nav>
+
+      <div class="pt-search">
+        <label class="pt-sr" for="ptSearchInput">搜索内容</label>
+        <input id="ptSearchInput" type="search" placeholder="搜索攻略 / 创作者 / 专题" autocomplete="off">
+        <button class="pt-search-btn" id="ptSearchBtn" aria-label="执行搜索">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5c6a7e" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.6 15.6 21 21"/></svg>
+        </button>
+        <div class="pt-search-hint" id="ptSearchHint" role="status" aria-live="polite"></div>
+      </div>
+
+      <button class="pt-burger" id="ptBurger" aria-label="切换导航菜单" aria-expanded="false" aria-controls="ptNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- S2 品牌首屏 -->
+  <section class="pt-hero" id="pt-home">
+    <div class="pt-wrap">
+      <div class="pt-hero-grid">
+        <div>
+          <p class="pt-eyebrow">官方网站 · 企业级视频内容生态</p>
+          <h1>传送门游戏下载</h1>
+          <p class="pt-hero-tagline">用影像拆解每一道空间谜题，用社区记录每一次通关瞬间。</p>
+          <p class="pt-hero-intro">传送门游戏下载官方网站是面向解谜玩家的原创高清视频平台。我们以<b>专业、正版、高清</b>为内容标准，围绕传送门游戏下载作品本身，持续产出通关实录、机制拆解、创作者访谈与社区共创内容。深耕垂直领域六年，平台已与 40 余位创作者建立长期合作，并以工匠般的耐心打磨每一条影像，让每一次点击都值得信赖。</p>
+          <div class="pt-hero-actions">
+            <a class="pt-btn pt-btn-solid" href="#pt-focus">进入焦点内容
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            </a>
+            <button class="pt-btn pt-btn-ghost" data-pt-modal="submit">创作者投稿</button>
+            <button class="pt-btn pt-btn-ghost" data-pt-modal="about">了解企业</button>
+          </div>
+          <div class="pt-hero-stats">
+            <div class="pt-stat"><div class="pt-stat-num">1,860+</div><div class="pt-stat-label">原创高清视频</div></div>
+            <div class="pt-stat"><div class="pt-stat-num">92.4万</div><div class="pt-stat-label">社区注册用户</div></div>
+            <div class="pt-stat"><div class="pt-stat-num">4.9 / 5</div><div class="pt-stat-label">内容口碑评分</div></div>
+          </div>
+        </div>
+        <div class="pt-hero-visual">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23202c3f'/%3E%3Cstop offset='1' stop-color='%23131a24'/%3E%3C/linearGradient%3E%3ClinearGradient id='pg' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ff9a4d'/%3E%3Cstop offset='1' stop-color='%23ff6a00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23bg)'/%3E%3Cg opacity='.5' stroke='%2338d4ff' stroke-width='2' fill='none'%3E%3Cpath d='M0 470h800M0 380h800M0 290h800M200 0v600M420 0v600M640 0v600'/%3E%3C/g%3E%3Cellipse cx='400' cy='290' rx='150' ry='228' fill='url(%23pg)'/%3E%3Cellipse cx='400' cy='290' rx='64' ry='150' fill='%23131a24'/%3E%3Cellipse cx='400' cy='290' rx='30' ry='86' fill='%2338d4ff' opacity='.9'/%3E%3Ccircle cx='150' cy='140' r='42' fill='%23ff7a1a' opacity='.28'/%3E%3Ccircle cx='660' cy='470' r='62' fill='%2338d4ff' opacity='.22'/%3E%3Crect x='300' y='520' width='200' height='9' rx='4.5' fill='%23ff7a1a'/%3E%3Cg fill='%23dfe8f3' opacity='.8'%3E%3Crect x='60' y='60' width='120' height='8' rx='4'/%3E%3Crect x='60' y='84' width='74' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="传送门游戏下载官方首屏主视觉：橙色传送门环与蓝色空间网格" width="800" height="600" loading="eager">
+          <div class="pt-hero-badge">
+            <span class="pt-hero-play" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#1b2330"><path d="M8 5l12 7-12 7z"/></svg>
+            </span>
+            <span><b>本周焦点实录</b><small>空间折叠 · 极限速通 12′38″</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点 + 视频流 -->
+  <section class="pt-sec" id="pt-focus">
+    <div class="pt-wrap">
+      <div class="pt-sec-head">
+        <div>
+          <p class="pt-eyebrow">FOCUS · HOT LIST</p>
+          <h2 class="pt-h2">本周焦点与<em>传送门游戏下载</em>热门影像</h2>
+          <p class="pt-sec-lead">精选编辑部推荐的原创高清内容，配以文字索引与完整数据，方便快速判断是否值得一看。</p>
+        </div>
+        <a class="pt-btn pt-btn-ghost" href="#pt-authors">查看全部创作者</a>
+      </div>
+
+      <div class="pt-focus-grid">
+        <article class="pt-focus-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff8a3d'/%3E%3Cstop offset='1' stop-color='%23c93a0a'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2318202e'/%3E%3Cstop offset='1' stop-color='%233a4c68'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23b)'/%3E%3Crect x='410' y='60' width='330' height='330' rx='20' fill='url(%23a)' opacity='.92' transform='rotate(8 575 225)'/%3E%3Crect x='470' y='120' width='210' height='210' rx='14' fill='%2318202e' transform='rotate(8 575 225)'/%3E%3Cpath d='M0 350 L260 200 L420 300 L620 150 L800 260 L800 450 L0 450Z' fill='%23ffffff' opacity='.06'/%3E%3Ccircle cx='200' cy='150' r='56' fill='none' stroke='%2338d4ff' stroke-width='5' opacity='.85'/%3E%3Ccircle cx='200' cy='150' r='20' fill='%2338d4ff' opacity='.8'/%3E%3Cg fill='%23ffffff' opacity='.85'%3E%3Crect x='48' y='340' width='230' height='12' rx='6'/%3E%3Crect x='48' y='368' width='150' height='12' rx='6' opacity='.6'/%3E%3C/g%3E%3C/svg%3E" alt="焦点实录：空间折叠传送门机关速通封面" width="800" height="450" loading="lazy">
+          <div class="pt-focus-body">
+            <span class="pt-chip">编辑部焦点</span>
+            <h3>空间折叠机关全解：从第 1 章到第 9 章的传送门路线重构</h3>
+            <p>耗时 26 分钟，逐条复盘传送门游戏下载主线中的角度计算与动量守恒技巧，附完整分段标记，适合第一次接触解谜机制的新玩家。</p>
+            <div class="pt-meta">
+              <span>作者 · 折线阿岚</span><span>播放 38.2 万</span><span>点赞 2.4 万</span><span>收藏 1.1 万</span>
+            </div>
+            <div class="pt-vops" style="margin-top:14px;justify-content:flex-start">
+              <button class="pt-op" data-pt-like>点赞 <span>2.4万</span></button>
+              <button class="pt-op" data-pt-fav>收藏</button>
+              <button class="pt-op" data-pt-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <ul class="pt-vlist">
+          <li class="pt-vitem">
+            <h4>三分钟读懂传送门动量守恒：新手最容易忽略的 5 个细节</h4>
+            <p class="pt-desc">以实际录像对照讲解速度叠加原理，配合俯视图标注，帮助玩家在传送门游戏下载的前三关建立正确的空间直觉。</p>
+            <div class="pt-tags"><span class="pt-tag">知识科普</span><span class="pt-tag">新手入门</span></div>
+            <div class="pt-meta"><span>作者 · 老乔物理</span><span>播放 21.6 万</span><span>点赞 1.3 万</span></div>
+            <div class="pt-vops">
+              <button class="pt-op" data-pt-like>点赞 <span>1.3万</span></button>
+              <button class="pt-op" data-pt-fav>收藏</button>
+            </div>
+          </li>
+          <li class="pt-vitem">
+            <h4>传送门游戏下载关卡编辑器：用 20 分钟搭出第一个自定义谜题</h4>
+            <p class="pt-desc">从触发器连线到测试导出，完整演示一次可玩关卡搭建流程，包含常见报错的排查思路，适合有基础的创作者。</p>
+            <div class="pt-tags"><span class="pt-tag">教程干货</span><span class="pt-tag">创意工坊</span></div>
+            <div class="pt-meta"><span>作者 · 蓝图工坊</span><span>播放 17.9 万</span><span>点赞 9,240</span></div>
+            <div class="pt-vops">
+              <button class="pt-op" data-pt-like>点赞 <span>9240</span></button>
+              <button class="pt-op" data-pt-fav>收藏</button>
+            </div>
+          </li>
+          <li class="pt-vitem">
+            <h4>深夜解谜实录：一位玩家用 4 小时走完第 7 章</h4>
+            <p class="pt-desc">没有剪辑、没有加速，保留全部试错与自言自语。这是传送门游戏下载社区里最真实的一段陪伴影像。</p>
+            <div class="pt-tags"><span class="pt-tag">日常记录</span><span class="pt-tag">治愈影像</span></div>
+            <div class="pt-meta"><span>作者 · 番茄不加糖</span><span>播放 9.4 万</span><span>点赞 6,820</span></div>
+            <div class="pt-vops">
+              <button class="pt-op" data-pt-like>点赞 <span>6820</span></button>
+              <button class="pt-op" data-pt-fav>收藏</button>
+            </div>
+          </li>
+          <li class="pt-vitem">
+            <h4>传输速度实测：不同设备上运行传送门游戏下载的帧率与画质对照</h4>
+            <p class="pt-desc">用三档硬件配置做横向测评，记录加载时间、画面撕裂与输入延迟，为准备补票的玩家提供参考数据。</p>
+            <div class="pt-tags"><span class="pt-tag">深度测评</span><span class="pt-tag">实用技巧</span></div>
+            <div class="pt-meta"><span>作者 · 帧数观测员</span><span>播放 14.3 万</span><span>点赞 7,910</span></div>
+            <div class="pt-vops">
+              <button class="pt-op" data-pt-like>点赞 <span>7910</span></button>
+              <button class="pt-op" data-pt-fav>收藏</button>
+            </div>
+          </li>
+          <li class="pt-vitem">
+            <h4>从美术到音效：传送门游戏下载团队的创作幕后访谈</h4>
+            <p class="pt-desc">对谈视觉与声效岗位的三位成员，聊空间色彩如何服务于解谜节奏，以及那些被剪掉的早期方案。</p>
+            <div class="pt-tags"><span class="pt-tag">人物访谈</span><span class="pt-tag">创作幕后</span></div>
+            <div class="pt-meta"><span>作者 · 编辑部 · 许澄</span><span>播放 12.1 万</span><span>点赞 5,430</span></div>
+            <div class="pt-vops">
+              <button class="pt-op" data-pt-like>点赞 <span>5430</span></button>
+              <button class="pt-op" data-pt-fav>收藏</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="pt-sec" id="pt-topic">
+    <div class="pt-wrap">
+      <div class="pt-sec-head">
+        <div>
+          <p class="pt-eyebrow">PROGRAM · 专题企划</p>
+          <h2 class="pt-h2"><em>传送门游戏下载</em>年度影像企划</h2>
+          <p class="pt-sec-lead">围绕解谜机制、社区共创与行业观察展开的三组长期企划，每期更新内容条目与进度状态。</p>
+        </div>
+        <button class="pt-btn pt-btn-ghost" data-pt-modal="submit">报名参与企划</button>
+      </div>
+
+      <div class="pt-topic-grid">
+        <article class="pt-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23eef3fa'/%3E%3Ccircle cx='180' cy='180' r='110' fill='%23ff7a1a' opacity='.85'/%3E%3Ccircle cx='180' cy='180' r='48' fill='%23eef3fa'/%3E%3Crect x='330' y='70' width='240' height='14' rx='7' fill='%231b2330'/%3E%3Crect x='330' y='106' width='180' height='14' rx='7' fill='%235c6a7e'/%3E%3Crect x='330' y='142' width='210' height='14' rx='7' fill='%235c6a7e' opacity='.7'/%3E%3Crect x='330' y='200' width='120' height='38' rx='8' fill='%2338d4ff'/%3E%3Crect x='330' y='262' width='240' height='10' rx='5' fill='%23c7d2e2'/%3E%3C/svg%3E" alt="专题企划视觉：橙色圆环与内容条目排版" width="640" height="360" loading="lazy">
+          <span class="pt-status">更新至第 3 期</span>
+          <h3>机制拆解计划：一关一条思辨线</h3>
+          <p>用影像解释传送门游戏下载中每一个机制背后的物理与设计逻辑，把抽象的公式变成能被看懂的画面。</p>
+          <ul>
+            <li>第 1 期：动量守恒在跳跃中的应用</li>
+            <li>第 2 期：空间角度与视线遮挡</li>
+            <li>第 3 期：双门协同的极限操作</li>
+          </ul>
+        </article>
+
+        <article class="pt-topic">
+          <span class="pt-status">持续征集中</span>
+          <h3>共创关卡影像计划</h3>
+          <p>面向社区征集自定义关卡的通关实录，由编辑部提供剪辑建议与推荐位，让原创内容被更多人看见。</p>
+          <ul>
+            <li>投稿要求：原创关卡 + 完整实录</li>
+            <li>评审维度：创意性、可玩性、影像表达</li>
+            <li>支持方式：官方分发与联合署名</li>
+          </ul>
+        </article>
+
+        <article class="pt-topic">
+          <span class="pt-status">季度更新</span>
+          <h3>解谜行业观察室</h3>
+          <p>以对话形式记录解谜品类的创作环境变化，包括工具演进、玩家结构、社区生态与版权保护话题。</p>
+          <ul>
+            <li>对谈：独立解谜团队的生存半径</li>
+            <li>观察：玩家内容从攻略到叙事的迁移</li>
+            <li>数据：社区投稿量与完播率变化</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 长文解析 -->
+  <section class="pt-sec" id="pt-guide">
+    <div class="pt-wrap">
+      <div class="pt-article">
+        <p class="pt-eyebrow">IN-DEPTH · 深度解析</p>
+        <h2>为什么「传送门游戏下载」值得被认真记录：一份超过 800 字的内容解析</h2>
+
+        <p>在解谜游戏这个小而倔强的品类里，「传送门游戏下载」这六个字常被当作一个入口，而不是一个终点。对普通玩家来说，它意味着寻找、安装、进入；对内容创作者来说，它意味着无数次重来、复盘与解释。传送门游戏下载官方网站之所以把视频作为核心媒介，正是因为这款作品的知识结构几乎全部藏在动作里：角度、距离、动量、视线，这些词单独看都很干，但放进一段三十秒的影像里，它们会立刻变成可模仿、可讨论、甚至可以争论的经验。</p>
+
+        <h3>一、从「下载」到「理解」：内容生态的第一层</h3>
+        <p>很多第一次搜索传送门游戏下载的人，真正需要的并不是一个链接，而是一份能告诉他「下载之后怎么玩」的说明书。平台的内容编辑逻辑因此从最基础的问题开始：前两章该怎么建立空间直觉？哪些机关可以先跳过？手柄与键鼠的操作差异如何影响判断？这类内容看似零散，却构成了社区新用户留存的第一道门槛。我们把这类视频归为「入门基建」，要求每条不超过八分钟，前三十秒必须给出结论，并在描述区附上时间轴。过去一年中，入门基建类内容贡献了平台 31% 的新用户首看时长，也解释了为什么这些视频的收藏率明显高于点赞率。</p>
+        <p>第二层是「机制翻译」。传送门游戏下载的谜题并不依赖数值成长，而依赖玩家对空间关系的重新理解。当一位创作者在视频里画出两条平行线、标出速度矢量，再用录像证明一次看似不可能的弹射，这其实是在完成一次知识转译。我们鼓励创作者使用图示、慢放和对照实验，因为观众需要的不只是「结果」，而是「为什么」。这也是官方网站持续投入高清播放能力的原因：当画面允许逐帧观察，解谜过程才真正具备可学习性。</p>
+
+        <h3>二、社区怎样把「一个人玩」变成「一起看」</h3>
+        <p>解谜游戏天然带有孤独属性。一个人面对机关，长时间停顿、试错、重来，这些过程在传统视频里通常会被剪掉。但传送门游戏下载社区里最受欢迎的几类内容，恰恰保留了这些沉默。深夜实录、未剪辑通关、失败合集，这些影像的共同点是「真实」。观众在评论区留下的往往不是技巧讨论，而是「我卡在同一个地方三个小时」「看到你也撞墙我就放心了」。这种陪伴感，是内容生态里最难被复制的一部分。</p>
+        <p>为了让这种陪伴可持续，平台在社区侧做了三件事：其一，建立创作者名录与作品索引，让新观众能顺着一位作者的内容线持续看下去；其二，开放投稿通道并固定每月评审，把优秀实录纳入官方推荐；其三，在评论区设置评分与短评双通道，允许观众用不同强度表达态度。我们不追求所有评论都「有用」，因为情绪的流动本身也是社区活力的一部分。</p>
+
+        <h3>三、品质与版权：一个视频品牌必须守住的底线</h3>
+        <p>谈到传送门游戏下载，绕不开版权与正版这两个词。作为一个以视频叙事为核心的品牌平台，我们把「原创、正版、高清」写进内容规范：不使用来源不明的素材，不传播修改过的安装包，不在封面与标题中做误导性承诺。这看起来限制了增长，但长期看，它建立的是信任。企业要持续运营，靠的不是一次流量高峰，而是用户相信你给出的每一条信息都经过核对。</p>
+        <p>在画质与音质上，我们坚持 1080P 起步，重点内容提供更高的位率与独立的音频说明轨。对解谜影像而言，声音往往承载着关键提示：远处的机械声、门体开启的电流声、环境音的变化，都可能是解法的一部分。平台的专业能力最终要落到这些细节上，而不是停留在口号里。我们也因此建立了内容校准流程：每条重点视频在上线前需经过至少一位编辑与一位资深玩家的双向复核，确认描述、时间轴与实际画面一致。</p>
+
+        <h3>四、面向下一个阶段：让垂直内容产生更长的生命周期</h3>
+        <p>解谜内容有一个天然优势：它不会因为版本更新而快速失效。三年前的通关思路，今天依然可以被新玩家使用。因此，传送门游戏下载官方网站把大量精力放在「可检索」上：统一的标签体系、清晰的内容层级、可回溯的专题目录。我们希望一条视频在被发布两年后，仍然能被需要它的人找到，并因为一段注解、一张示意图而重新获得价值。</p>
+        <p>接下来一年，平台计划开放三条新线路：与创作者共建的机制百科、面向新玩家的七日入门计划、以及以社区投票决定的年度挑战赛。这些计划的共同目标只有一个——让「传送门游戏下载」不只出现在搜索框里，也出现在玩家的长期记忆里。我们相信，好的内容生态不是把所有人聚在一起看同一条视频，而是让每个人都能找到那条真正属于他的影像。</p>
+
+        <div class="pt-article-note">内容说明：本文由传送门游戏下载官方网站编辑部撰写，涉及的数据来自平台内容运营与社区反馈汇总，用于说明内容生态的构成逻辑，不构成任何形式的消费引导。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="pt-sec" id="pt-authors">
+    <div class="pt-wrap">
+      <div class="pt-sec-head">
+        <div>
+          <p class="pt-eyebrow">CREATORS · 创作者矩阵</p>
+          <h2 class="pt-h2">与<em>传送门游戏下载</em>一起持续输出的创作者</h2>
+          <p class="pt-sec-lead">双列简介式名录，展示擅长领域、作品数量与粉丝规模，点击可查看完整档案。</p>
+        </div>
+      </div>
+
+      <div class="pt-authors">
+        <article class="pt-author">
+          <span class="pt-ava" style="background:linear-gradient(135deg,#ff7a1a,#c93a0a)">岚</span>
+          <div>
+            <h3>折线阿岚</h3>
+            <p class="pt-role">机制拆解 · 速通实录</p>
+            <p>前机械设计从业者，擅长把空间关系画成图。六年来专注传送门游戏下载的路线优化，习惯在每条视频结尾留下一句「下次你可以换个方向」。</p>
+            <div class="pt-author-nums"><span>作品 <b>236</b></span><span>粉丝 <b>18.6万</b></span><span>均播 <b>12.4万</b></span></div>
+            <button class="pt-author-more" data-pt-author="折线阿岚">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="pt-author">
+          <span class="pt-ava" style="background:linear-gradient(135deg,#38d4ff,#0e6b83)">乔</span>
+          <div>
+            <h3>老乔物理</h3>
+            <p class="pt-role">知识科普 · 原理讲解</p>
+            <p>中学物理教师，把课堂上的动量守恒搬进游戏画面。坚持每期只讲一个概念，用最简单的话说清最绕的机关，是新玩家最常被推荐的入门作者。</p>
+            <div class="pt-author-nums"><span>作品 <b>148</b></span><span>粉丝 <b>22.1万</b></span><span>均播 <b>9.8万</b></span></div>
+            <button class="pt-author-more" data-pt-author="老乔物理">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="pt-author">
+          <span class="pt-ava" style="background:linear-gradient(135deg,#5fbf8a,#1c6b45)">坊</span>
+          <div>
+            <h3>蓝图工坊</h3>
+            <p class="pt-role">关卡编辑 · 教程干货</p>
+            <p>社区自定义关卡高产作者，累计发布 90 余张可玩地图。擅长把编辑器逻辑讲成流水线步骤，也会公开自己失败的草稿，鼓励更多人动手尝试。</p>
+            <div class="pt-author-nums"><span>作品 <b>184</b></span><span>粉丝 <b>13.7万</b></span><span>均播 <b>7.6万</b></span></div>
+            <button class="pt-author-more" data-pt-author="蓝图工坊">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="pt-author">
+          <span class="pt-ava" style="background:linear-gradient(135deg,#8a7cff,#4335a8)">糖</span>
+          <div>
+            <h3>番茄不加糖</h3>
+            <p class="pt-role">日常记录 · 治愈影像</p>
+            <p>上班族的深夜解谜频道，几乎不剪辑。她相信卡关也是一种经历，评论区常见「看你的视频像在陪朋友打游戏」，长期占据社区陪伴感口碑前列。</p>
+            <div class="pt-author-nums"><span>作品 <b>312</b></span><span>粉丝 <b>16.4万</b></span><span>均播 <b>5.2万</b></span></div>
+            <button class="pt-author-more" data-pt-author="番茄不加糖">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="pt-author">
+          <span class="pt-ava" style="background:linear-gradient(135deg,#ffb03d,#b5650a)">帧</span>
+          <div>
+            <h3>帧数观测员</h3>
+            <p class="pt-role">深度测评 · 硬件对照</p>
+            <p>独立测评人，专注运行表现与画面细节。所有测评公开测试环境与采样方式，用可复现的数据说话，是平台内容校准流程中的外部评审之一。</p>
+            <div class="pt-author-nums"><span>作品 <b>96</b></span><span>粉丝 <b>11.2万</b></span><span>均播 <b>8.9万</b></span></div>
+            <button class="pt-author-more" data-pt-author="帧数观测员">查看档案 →</button>
+          </div>
+        </article>
+
+        <article class="pt-author">
+          <span class="pt-ava" style="background:linear-gradient(135deg,#ef6f9c,#9c2a56)">澄</span>
+          <div>
+            <h3>许澄</h3>
+            <p class="pt-role">人物访谈 · 品牌故事</p>
+            <p>平台编辑部成员，负责创作者访谈与品牌叙事。她的提问总是慢半拍，却常能让人讲出没打算讲的部分，被社区称为「最会听的人」。</p>
+            <div class="pt-author-nums"><span>作品 <b>74</b></span><span>粉丝 <b>6.8万</b></span><span>均播 <b>6.1万</b></span></div>
+            <button class="pt-author-more" data-pt-author="许澄">查看档案 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 评价 -->
+  <section class="pt-sec" id="pt-voices">
+    <div class="pt-wrap">
+      <div class="pt-sec-head">
+        <div>
+          <p class="pt-eyebrow">VOICES · 用户口碑</p>
+          <h2 class="pt-h2">社区怎么说<em>传送门游戏下载</em>官方网站</h2>
+          <p class="pt-sec-lead">双列短评与评分摘要组合，收录来自新玩家、老玩家与创作者的多种声音。</p>
+        </div>
+      </div>
+
+      <div class="pt-comments">
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#ff7a1a">沈</span><span class="pt-cname">沈同学</span><span class="pt-cstar">★★★★★</span></div>
+          <p>第一次玩传送门游戏下载完全没头绪，看了入门基建那组视频后终于理解了空间关系。最惊喜的是时间轴做得特别细，能直接跳到卡住的那一步。</p>
+          <p class="pt-cmeta">入门玩家 · 2026 年 10 月</p>
+        </article>
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#38d4ff">阿</span><span class="pt-cname">阿追</span><span class="pt-cstar">★★★★★</span></div>
+          <p>深夜实录这个栏目真的很治愈。卡关的时候看到别人也在同一个地方撞墙，忽然就没那么焦虑了。希望以后能多一点未剪辑的长视频。</p>
+          <p class="pt-cmeta">社区老用户 · 2026 年 9 月</p>
+        </article>
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#5fbf8a">木</span><span class="pt-cname">木头人</span><span class="pt-cstar">★★★★☆</span></div>
+          <p>整体画质很干净，重点内容有独立音频说明对听障用户很友好。扣一星是因为专题更新频率还能再快一点，等第三期等了一阵子。</p>
+          <p class="pt-cmeta">内容体验反馈 · 2026 年 9 月</p>
+        </article>
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#8a7cff">白</span><span class="pt-cname">白噪音</span><span class="pt-cstar">★★★★★</span></div>
+          <p>作为创作者说一句，投稿通道的处理速度超出预期。编辑给的不是模板回复，而是逐条指出剪辑节奏问题，这种反馈在大学课堂里都不一定拿得到。</p>
+          <p class="pt-cmeta">入驻创作者 · 2026 年 8 月</p>
+        </article>
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#ef6f9c">橘</span><span class="pt-cname">橘子汽水</span><span class="pt-cstar">★★★★☆</span></div>
+          <p>搜索偶尔会把教程和测评混在一起，不过标签筛选之后好很多。喜欢这里的创作者名录，顺着一个作者看下去很像在追剧。</p>
+          <p class="pt-cmeta">浏览体验反馈 · 2026 年 8 月</p>
+        </article>
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#b5650a">林</span><span class="pt-cname">林间小径</span><span class="pt-cstar">★★★★★</span></div>
+          <p>最打动我的是他们真的在认真谈版权。很多站点只会写一句「正版」，但这里的每一条视频都能看到资料核对说明，作为家长比较放心。</p>
+          <p class="pt-cmeta">家庭用户 · 2026 年 7 月</p>
+        </article>
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#0e6b83">学</span><span class="pt-cname">学号十七</span><span class="pt-cstar">★★★★☆</span></div>
+          <p>机制拆解类内容质量很高，但希望增加一些纯文字版摘要。有时候只是想快速查一个角度数据，看完整视频有点重。</p>
+          <p class="pt-cmeta">效率型用户 · 2026 年 7 月</p>
+        </article>
+        <article class="pt-comment">
+          <div class="pt-comment-top"><span class="pt-cava" style="background:#c93a0a">喵</span><span class="pt-cname">喵呜罐头</span><span class="pt-cstar">★★★★★</span></div>
+          <p>跟着七日入门计划走完了前两章，中间只卡了一次。教程里那句「先观察光线的方向」真的救了命，现在已经推荐给三个朋友了。</p>
+          <p class="pt-cmeta">新用户 · 2026 年 6 月</p>
+        </article>
+      </div>
+
+      <div class="pt-ratesum">
+        <div><b>4.9</b><span>综合口碑评分</span></div>
+        <div><b>96.3%</b><span>教程类完播率</span></div>
+        <div><b>9,240</b><span>本月新增短评</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助：企业动态 + 合作 -->
+  <section class="pt-sec" id="pt-news">
+    <div class="pt-wrap">
+      <div class="pt-split">
+        <div>
+          <p class="pt-eyebrow">NEWS · 企业动态</p>
+          <h2 class="pt-h2" style="margin-bottom:18px"><em>传送门游戏下载</em>官方发布与更新日志</h2>
+          <ul class="pt-news">
+            <li>
+              <time datetime="2026-11-18">11 / 18</time>
+              <div><h3>「机制拆解计划」第三期上线，新增双门协同专题</h3><p>本期共上线 12 条原创高清视频，配套 3 张空间示意图，专题页同步更新目录与进度标记。</p></div>
+            </li>
+            <li>
+              <time datetime="2026-11-09">11 / 09</time>
+              <div><h3>创作者名录升级为双列档案，支持领域筛选</h3><p>创作者档案新增擅长领域、作品数量与均播数据，方便新观众按方向找到合适的作者。</p></div>
+            </li>
+            <li>
+              <time datetime="2026-10-27">10 / 27</time>
+              <div><h3>内容校准流程扩充外部评审席位</h3><p>新增两位外部测评人参与重点视频上线前复核，覆盖画面、描述与时间轴的一致性检查。</p></div>
+            </li>
+            <li>
+              <time datetime="2026-10-12">10 / 12</time>
+              <div><h3>冬季投稿通道开启，主题为「我的第一道机关」</h3><p>面向所有注册用户征集原创实录，入选作品将获得官方推荐位与联合署名，投稿截止至 12 月。</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="pt-eyebrow">PARTNERS · 合作品牌</p>
+          <h2 class="pt-h2" style="margin-bottom:18px">生态伙伴与支持方</h2>
+          <div class="pt-partners">
+            <div class="pt-partner"><i style="background:#ff7a1a">棱</i>棱镜影像实验室</div>
+            <div class="pt-partner"><i style="background:#38d4ff">声</i>声场音频工作室</div>
+            <div class="pt-partner"><i style="background:#5fbf8a">造</i>造点创意基金</div>
+            <div class="pt-partner"><i style="background:#8a7cff">图</i>图谱开源社区</div>
+          </div>
+
+          <p class="pt-eyebrow" style="margin-top:30px">SUPPORT · 创作灵感</p>
+          <h2 class="pt-h2" style="margin-bottom:14px">本周灵感便签</h2>
+          <div class="pt-news">
+            <li style="grid-template-columns:auto minmax(0,1fr)">
+              <time>选题</time>
+              <div><h3>用「失败合集」讲机制</h3><p>先展示三次错误解法，再给出正解，观众的记忆点会比直接看答案更牢。</p></div>
+            </li>
+            <li style="grid-template-columns:auto minmax(0,1fr)">
+              <time>剪辑</time>
+              <div><h3>在关键弹射前留 2 秒空镜</h3><p>给观众一点预判时间，完播率与评论讨论度通常都会更高。</p></div>
+            </li>
+            <li style="grid-template-columns:auto minmax(0,1fr)">
+              <time>标题</time>
+              <div><h3>把结论写进标题前六字</h3><p>例如「别再这样跳」比「关于跳跃的若干思考」更容易被点开。</p></div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pt-sec" id="pt-faq">
+    <div class="pt-wrap">
+      <div class="pt-sec-head">
+        <div>
+          <p class="pt-eyebrow">FAQ · 帮助中心</p>
+          <h2 class="pt-h2">关于<em>传送门游戏下载</em>官方网站的常见问题</h2>
+          <p class="pt-sec-lead">点击问题展开答案，覆盖内容、投稿、版权与合作四类常见疑问。</p>
+        </div>
+        <button class="pt-btn pt-btn-ghost" data-pt-modal="feedback">提交反馈</button>
+      </div>
+
+      <div class="pt-faq">
+        <details>
+          <summary>这个平台的内容都是原创吗？</summary>
+          <p>是的。传送门游戏下载官方网站上线的视频均由入驻创作者或编辑部原创制作，重点内容需经过双向复核后才会发布。我们不搬运、不二次压缩来源不明的素材。</p>
+        </details>
+        <details>
+          <summary>新手应该从哪一组内容开始看？</summary>
+          <p>建议先看「入门基建」系列，从空间直觉与动量守恒两个主题入手，再配合机制拆解计划的第 1 期。完整走完大约需要两小时，多数玩家会在一周内形成基本判断力。</p>
+        </details>
+        <details>
+          <summary>怎样投稿自己的通关实录？</summary>
+          <p>页面右上角与首屏均设有「创作者投稿」入口，填写内容方向与素材说明即可。编辑部会在五个工作日内回复，并给出剪辑与结构建议，未入选的作品同样会得到反馈。</p>
+        </details>
+        <details>
+          <summary>平台是否提供下载服务？</summary>
+          <p>本网站是内容与社区门户，不提供软件安装包分发。所有与传送门游戏下载相关的获取方式，请以正规渠道与官方说明为准，平台在相关内容中也会标注来源提示。</p>
+        </details>
+        <details>
+          <summary>视频的清晰度选项有哪些？</summary>
+          <p>重点内容默认提供 1080P 起步的画质，部分机制拆解与测评类视频提供更高的位率版本，并附带独立音频说明轨，便于逐帧观察与听感对照。</p>
+        </details>
+        <details>
+          <summary>如何申请成为合作品牌？</summary>
+          <p>可在反馈弹窗中选择「合作咨询」，说明合作方向、资源类型与预期周期。我们的商务团队会结合内容调性与社区用户结构进行评估，通常两周内给出答复。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / 投稿 -->
+  <section class="pt-sec" id="pt-join" style="padding-top:0">
+    <div class="pt-wrap">
+      <div class="pt-cta">
+        <div>
+          <p class="pt-eyebrow" style="color:#38d4ff">JOIN THE PORTAL</p>
+          <h2>把你的通关瞬间，交给<em style="color:#ff9a4d;font-style:normal">传送门游戏下载</em>的社区</h2>
+          <p>无论是第一次推开门的紧张，还是极限速通的那个瞬间，我们都希望它能被认真记录。注册即可参与冬季投稿通道，入选内容将获得官方推荐位与联合署名。</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="pt-btn pt-btn-solid" data-pt-modal="submit">立即投稿</button>
+          <button class="pt-btn pt-btn-ghost" data-pt-copy>分享本页</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="pt-footer">
+  <div class="pt-wrap">
+    <div class="pt-footer-grid">
+      <div>
+        <div class="pt-footer-brand">
+          <span class="pt-brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="10" rx="4.2" ry="6.6" fill="#ff7a1a"/><ellipse cx="12" cy="10" rx="1.8" ry="3.6" fill="#1b2330"/><rect x="5" y="18" width="14" height="2.4" rx="1.2" fill="#38d4ff"/></svg>
+          </span>
+          <b>传送门游戏下载</b>
+        </div>
+        <p>传送门游戏下载官方网站，是面向解谜玩家的原创高清视频与创作者社区。我们以专业、正版、高清为内容标准，持续运营品牌故事、企业动态与精品内容，致力于构建值得信赖的垂直领域内容生态。</p>
+      </div>
+      <div>
+        <h3>内容导航</h3>
+        <ul>
+          <li><a href="#pt-focus">焦点内容</a></li>
+          <li><a href="#pt-topic">专题企划</a></li>
+          <li><a href="#pt-guide">深度解析</a></li>
+          <li><a href="#pt-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>社区与帮助</h3>
+        <ul>
+          <li><a href="#pt-voices">用户口碑</a></li>
+          <li><a href="#pt-news">企业动态</a></li>
+          <li><a href="#pt-faq">帮助中心</a></li>
+          <li><a href="#pt-join">投稿通道</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>官方发布</h3>
+        <ul>
+          <li>内容合作：content@portalvideo.example</li>
+          <li>商务咨询：biz@portalvideo.example</li>
+          <li>社区支持：support@portalvideo.example</li>
+          <li>运营时间：周一至周五 10:00 - 19:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-footer-bottom">
+      <span>© 2026 传送门游戏下载官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均标注来源与校验说明 · 备案号：示例备案 0000-2026</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="pt-toast" id="ptToast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="pt-modal" id="ptModal" role="dialog" aria-modal="true" aria-labelledby="ptModalTitle">
+  <div class="pt-modal-card">
+    <button class="pt-modal-close" id="ptModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="ptModalTitle">标题</h3>
+    <div id="ptModalBody"></div>
+  </div>
+</div>
+
+<!-- 回到顶部 -->
+<button class="pt-top" id="ptTop" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('ptToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('pt-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('pt-on'); }, 2400);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('ptBurger');
+  var nav = document.getElementById('ptNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('pt-open');
+    burger.classList.toggle('pt-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 760){
+      nav.classList.remove('pt-open');
+      burger.classList.remove('pt-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ---------- 搜索提示 ---------- */
+  var searchInput = document.getElementById('ptSearchInput');
+  var searchHint = document.getElementById('ptSearchHint');
+  var searchBtn = document.getElementById('ptSearchBtn');
+  var searchPool = [
+    {t:'机制拆解计划 · 第三期', d:'专题 / 空间协同'},
+    {t:'三分钟读懂动量守恒', d:'视频 / 知识科普'},
+    {t:'关卡编辑器 20 分钟入门', d:'视频 / 教程干货'},
+    {t:'折线阿岚 创作者档案', d:'创作者 / 机制拆解'},
+    {t:'冬季投稿通道说明', d:'帮助 / 投稿'},
+    {t:'深度测评：三档硬件对照', d:'视频 / 测评'}
+  ];
+  function renderSearch(q){
+    var key = (q || '').trim();
+    if(!key){
+      searchHint.innerHTML = '<p>试试搜索：动量守恒、编辑器、投稿</p>';
+      searchHint.classList.add('pt-on');
+      return;
+    }
+    var hits = searchPool.filter(function(item){
+      return item.t.indexOf(key) > -1 || item.d.indexOf(key) > -1;
+    });
+    if(hits.length === 0){
+      searchHint.innerHTML = '<p>未找到与「' + key.replace(/[<>&]/g,'') + '」匹配的内容，试试关键词：速通、机制、创作者。</p>';
+      searchHint.classList.add('pt-on');
+      return;
+    }
+    searchHint.innerHTML = hits.map(function(item){
+      return '<button type="button" data-pt-hit="' + item.t + '">' + item.t + '<span style="color:#8794a8;font-size:11.5px"> · ' + item.d + '</span></button>';
+    }).join('');
+    searchHint.classList.add('pt-on');
+  }
+  searchInput.addEventListener('input', function(){ renderSearch(searchInput.value); });
+  searchInput.addEventListener('focus', function(){ renderSearch(searchInput.value); });
+  searchBtn.addEventListener('click', function(){
+    renderSearch(searchInput.value);
+    if(searchInput.value.trim()){ toast('已为你筛选相关内容'); }
+  });
+  searchHint.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-pt-hit]');
+    if(!btn) return;
+    searchInput.value = btn.getAttribute('data-pt-hit');
+    searchHint.classList.remove('pt-on');
+    toast('已定位到相关内容：' + btn.getAttribute('data-pt-hit'));
+    document.getElementById('pt-focus').scrollIntoView({behavior:'smooth'});
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.pt-search')){ searchHint.classList.remove('pt-on'); }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  function parseNum(txt){
+    if(!txt) return 0;
+    var m = txt.replace(/,/g,'').match(/([\d.]+)\s*(万)?/);
+    if(!m) return 0;
+    var n = parseFloat(m[1]);
+    return m[2] ? Math.round(n * 10000) : Math.round(n);
+  }
+  function fmtNum(n){
+    if(n >= 10000){ return (n/10000).toFixed(1).replace(/\.0$/,'') + '万'; }
+    return String(n);
+  }
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-pt-like]');
+    if(likeBtn){
+      var span = likeBtn.querySelector('span');
+      var cur = parseNum(span ? span.textContent : '0');
+      var liked = likeBtn.classList.toggle('pt-liked');
+      var next = liked ? cur + 1 : Math.max(0, cur - 1);
+      if(span){ span.textContent = fmtNum(next); }
+      toast(liked ? '感谢点赞，已记录你的支持' : '已取消点赞');
+      return;
+    }
+    var favBtn = e.target.closest('[data-pt-fav]');
+    if(favBtn){
+      var on = favBtn.classList.toggle('pt-faved');
+      favBtn.textContent = on ? '已收藏' : '收藏';
+      toast(on ? '已加入收藏夹' : '已取消收藏');
+      return;
+    }
+    var copyBtn = e.target.closest('[data-pt-copy]');
+    if(copyBtn){
+      var link = 'https://portal-video.example/portal-game';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ toast('链接已复制，可分享给同好'); }, function(){ toast('复制失败，请手动选择内容'); });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = link;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); toast('链接已复制，可分享给同好'); }
+        catch(err){ toast('复制失败，请手动选择内容'); }
+        document.body.removeChild(ta);
+      }
+    }
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var modal = document.getElementById('ptModal');
+  var modalTitle = document.getElementById('ptModalTitle');
+  var modalBody = document.getElementById('ptModalBody');
+  var lastFocus = null;
+
+  function openModal(title, html){
+    lastFocus = document.activeElement;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('pt-on');
+    document.body.style.overflow = 'hidden';
+    var closeBtn = document.getElementById('ptModalClose');
+    if(closeBtn){ closeBtn.focus(); }
+  }
+  function closeModal(){
+    modal.classList.remove('pt-on');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus){ lastFocus.focus(); }
+  }
+  document.getElementById('ptModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('pt-on')){ closeModal(); } });
+
+  var modalTemplates = {
+    about: {
+      title: '关于传送门游戏下载官方网站',
+      html: '<p>传送门游戏下载官方网站由内容团队与社区共同运营，聚焦解谜类游戏的原创高清影像。我们相信专业来自核对，口碑来自长期，平台将持续在创作者扶持、内容校准与版权保护三件事上投入。</p><p style="margin-top:10px">如果希望进一步了解合作方式，可在反馈入口留下联系方式。</p>'
+    },
+    submit: {
+      title: '创作者投稿通道',
+      html: '<p>请填写基本信息，编辑部将在五个工作日内回复，并附上剪辑与结构建议。</p>' +
+            '<div class="pt-field"><label for="ptSubTitle">作品标题</label><input id="ptSubTitle" type="text" placeholder="例如：我的第一道机关"></div>' +
+            '<div class="pt-field"><label for="ptSubTopic">内容方向</label><input id="ptSubTopic" type="text" placeholder="机制拆解 / 日常记录 / 深度测评"></div>' +
+            '<div class="pt-field"><label for="ptSubDesc">一句话说明</label><textarea id="ptSubDesc" rows="3" placeholder="这期视频想解决什么问题？"></textarea></div>' +
+            '<div style="margin-top:16px"><button class="pt-btn pt-btn-solid" id="ptSubmitGo">提交投稿</button></div>'
+    },
+    feedback: {
+      title: '反馈与合作咨询',
+      html: '<p>你的反馈会直接进入内容运营的周会记录，我们尽量逐条回复。</p>' +
+            '<div class="pt-field"><label for="ptFbType">类型</label><input id="ptFbType" type="text" placeholder="内容问题 / 体验建议 / 合作咨询"></div>' +
+            '<div class="pt-field"><label for="ptFbText">具体说明</label><textarea id="ptFbText" rows="4" placeholder="请尽量描述清楚，便于我们定位"></textarea></div>' +
+            '<div style="margin-top:16px"><button class="pt-btn pt-btn-solid" id="ptFbGo">发送反馈</button></div>'
+    }
+  };
+
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-pt-modal]');
+    if(btn){
+      var key = btn.getAttribute('data-pt-modal');
+      var tpl = modalTemplates[key];
+      if(tpl){ openModal(tpl.title, tpl.html); }
+      return;
+    }
+    var authorBtn = e.target.closest('[data-pt-author]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-pt-author');
+      openModal(name + ' · 创作者档案',
+        '<p>昵称：' + name + '</p>' +
+        '<p>领域：机制拆解 / 影像叙事</p>' +
+        '<p>简介：长期在传送门游戏下载官方网站发布原创内容，作品以清晰的图示与耐心的讲解见长。合作与转载请通过反馈入口联系编辑部。</p>' +
+        '<p style="margin-top:10px;color:#8794a8;font-size:12.5px">档案数据由创作者本人确认，平台定期复核。</p>');
+    }
+  });
+
+  modal.addEventListener('click', function(e){
+    if(e.target && e.target.id === 'ptSubmitGo'){
+      var t = document.getElementById('ptSubTitle');
+      if(t && !t.value.trim()){ toast('请先填写作品标题'); return; }
+      closeModal();
+      toast('投稿已提交，编辑会尽快联系你');
+    }
+    if(e.target && e.target.id === 'ptFbGo'){
+      var d = document.getElementById('ptFbText');
+      if(d && !d.value.trim()){ toast('请先填写具体说明'); return; }
+      closeModal();
+      toast('反馈已收到，感谢你的认真');
+    }
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('ptTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ topBtn.classList.add('pt-on'); }
+    else{ topBtn.classList.remove('pt-on'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 数字滚动（首屏数据） ---------- */
+  var statNums = document.querySelectorAll('.pt-stat-num');
+  var statDone = false;
+  function runStats(){
+    if(statDone) return;
+    var first = document.querySelector('.pt-hero');
+    if(!first) return;
+    var rect = first.getBoundingClientRect();
+    if(rect.top < window.innerHeight && rect.bottom > 0){
+      statDone = true;
+      statNums.forEach(function(el){
+        var raw = el.textContent;
+        el.textContent = raw;
+        el.style.opacity = '0';
+        el.style.transition = 'opacity .5s';
+        setTimeout(function(){ el.style.opacity = '1'; }, 120);
+      });
+    }
+  }
+  window.addEventListener('scroll', runStats, {passive:true});
+  runStats();
+})();
+</script>
+</body>
+          </html>
